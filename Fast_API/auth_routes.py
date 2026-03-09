@@ -28,9 +28,7 @@ def autenticar_usuario(email, senha, session):
     usuario = session.query(Usuario).filter(Usuario.email == email).first()
     if not usuario:
         return False
-    # Truncate password to 72 bytes for bcrypt compatibility
-    senha_truncada = senha[:72]
-    if not bcrypt_context.verify(senha_truncada, usuario.senha):
+    if not bcrypt_context.verify(senha, usuario.senha):
         return False    
     return usuario
 

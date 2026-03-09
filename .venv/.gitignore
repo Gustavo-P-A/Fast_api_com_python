@@ -1,0 +1,27 @@
+# --- Sistemas Operacionais ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editores e IDEs ---
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs e Dados Temporários ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+temp/
+
+# --- Arquivos de Ambiente (SENSÍVEL - NUNCA SUBIR) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt

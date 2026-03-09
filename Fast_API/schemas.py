@@ -5,8 +5,8 @@ class UsuarioSchema(BaseModel):
     nome: str
     email: str
     senha: str
-    ativo: Optional[bool]
-    adm: Optional[bool]
+    ativo: Optional[bool] = None
+    adm: Optional[bool] = None
 
     class Config:
         from_attributes = True
